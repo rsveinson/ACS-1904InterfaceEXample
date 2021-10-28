@@ -3,7 +3,7 @@
  * @Sveinson
 */
 
-public abstract class SpaceShip{
+public abstract class SpaceShip implements Moveable{
     protected String name;
     protected int vin;
     protected int fuel;
@@ -19,7 +19,7 @@ public abstract class SpaceShip{
     // full arg constructor would go here
  
     // abstract method must be implemented in derived classes
-    public abstract void move(int speed, int direction);
+    //public abstract void move(int speed, int direction);
     public abstract void land();
     
     // getters

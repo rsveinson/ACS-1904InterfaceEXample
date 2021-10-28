@@ -3,7 +3,7 @@
  * @Sveinson
 */
 
-public abstract class SpaceBody{
+public abstract class SpaceBody implements Moveable{
 
     
     // constructors
@@ -13,7 +13,7 @@ public abstract class SpaceBody{
     
 
     // abstract method must be implemented in derived classes
-    public abstract void move(int speed, int direction);
+    //public abstract void move(int speed, int direction);
     public abstract void orbit();
     
     // getters

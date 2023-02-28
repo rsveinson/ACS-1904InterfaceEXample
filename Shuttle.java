@@ -15,6 +15,12 @@ public class Shuttle extends SpaceShip{
         cargoLimit = 0;
     }
     
+    //SpaceShip(String name, int vin, int fuel)
+    public Shuttle(String name, int vin, int fuel, int cargoLimit){
+        super(name, vin, fuel);
+        this.cargoLimit = cargoLimit;
+    }
+    
     // implement the abstract methods from SpaceShipt
     public void move(int s, int d){
         System.out.println("move like a shuttle");

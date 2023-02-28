@@ -3,7 +3,7 @@
  * @Sveinson
 */
 
-public abstract class SpaceShip implements Moveable{
+public abstract class SpaceShip implements Moveable, Comparable<SpaceShip>{
     protected String name;
     protected int vin;
     protected int fuel;
@@ -16,8 +16,20 @@ public abstract class SpaceShip implements Moveable{
         fuel = 0;
     }
 
-    // full arg constructor would go here
- 
+    // full arg constructor
+    public SpaceShip(String name, int vin, int fuel){
+        this.name = name;
+        this.vin = vin;
+        this.fuel = fuel;
+    }
+    
+    // implement compareTo from the comparable interface
+    // should be passed down to the subclasses that extend this one
+    @Override
+    public int compareTo(SpaceShip s){
+        return name.compareTo(s.name);
+    }// end compare to
+    
     // abstract method must be implemented in derived classes
     //public abstract void move(int speed, int direction);
     public abstract void land();
@@ -35,6 +47,13 @@ public abstract class SpaceShip implements Moveable{
     }
     
     // other
+    @Override
+    public String toString(){
+        StringBuilder st = new StringBuilder();
+        st.append(this.name + ": " + this.vin);
+        
+        return st.toString();
+    }
 
 
 }

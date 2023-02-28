@@ -15,6 +15,12 @@ public class ViperFighter extends SpaceShip{
         weapons = new String[10];
     }
     
+    // full arg
+    //SpaceShip(String name, int vin, int fuel)
+    public ViperFighter(String name, int vin, int fuel){
+        super(name, vin, fuel);
+        weapons = new String[3];
+    }
     // implement the abstract methods from SpaceShipt
     public void move(int s, int d){
         System.out.println("move like a fighter");

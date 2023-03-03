@@ -16,10 +16,12 @@ public class Comet extends SpaceBody{
     }
     
     // implement abstract methods
+    @Override
     public void move(int s, int d){
         System.out.println("move like a comet");
     }
     
+    @Override
     public void orbit(){
         System.out.println("I' orbitting like a comet");
     }

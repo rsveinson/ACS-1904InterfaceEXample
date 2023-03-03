@@ -22,10 +22,12 @@ public class Shuttle extends SpaceShip{
     }
     
     // implement the abstract methods from SpaceShipt
+    @Override
     public void move(int s, int d){
         System.out.println("move like a shuttle");
     }
     
+    @Override
     public void land(){
         System.out.println("land like a shuttle");
     } 

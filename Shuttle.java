@@ -28,7 +28,8 @@ public class Shuttle extends SpaceShip{
     
     public void land(){
         System.out.println("land like a shuttle");
-    }    
+    } 
+
 
 }
 

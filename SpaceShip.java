@@ -3,7 +3,7 @@
  * @Sveinson
  */
 
-public abstract class SpaceShip implements Moveable, Comparable<SpaceShip>{
+public abstract class SpaceShip implements Moveable, Comparator<String>{
 protected String name;
 protected int vin;
 protected int fuel;

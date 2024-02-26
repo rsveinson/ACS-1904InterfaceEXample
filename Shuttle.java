@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
  * @Sveinson 
 */
 
-public class Shuttle extends SpaceShip{
+public class Shuttle extends SpaceShip implements Comparable<String>, Moveable{
     private int cargoLimit;
     
     // constructors

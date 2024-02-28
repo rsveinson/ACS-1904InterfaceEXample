@@ -4,55 +4,55 @@
  */
 
 public abstract class SpaceShip implements Moveable, Comparator<String>{
-protected String name;
-protected int vin;
-protected int fuel;
+    protected String name;
+    protected int vin;
+    protected int fuel;
 
-// constructor
-public SpaceShip(){
-name = "default";
-vin = 0;
-fuel = 0;
-}
+    // constructor
+    public SpaceShip(){
+        name = "default";
+        vin = 0;
+        fuel = 0;
+    }
 
-// full arg constructor
-public SpaceShip(String name, int vin, int fuel){
-this.name = name;
-this.vin = vin;
-this.fuel = fuel;
-}
+    // full arg constructor
+    public SpaceShip(String name, int vin, int fuel){
+        this.name = name;
+        this.vin = vin;
+        this.fuel = fuel;
+    }
 
-// implement compareTo from the comparable interface
-// should be passed down to the subclasses that extend this one
-@Override
-public int compareTo(SpaceShip s){
-return name.compareTo(s.name);
-}// end compare to
+    // implement compareTo from the comparable interface
+    // should be passed down to the subclasses that extend this one
+    @Override
+    public int compareTo(SpaceShip s){
+        return name.compareTo(s.name);
+    }// end compare to
 
-// abstract method must be implemented in derived classes
-//public abstract void move(int speed, int direction);
-public abstract void land();
+    // abstract method must be implemented in derived classes
+    //public abstract void move(int speed, int direction);
+    public abstract void land();
 
-// getters
-public int getFuel(){
-return fuel;
-}
+    // getters
+    public int getFuel(){
+        return fuel;
+    }
 
-// other getters for 
+    // other getters for 
 
-// setters
-public void addFuel(int amt){
-fuel += amt;
-}
+    // setters
+    public void addFuel(int amt){
+        fuel += amt;
+    }
 
-// other
-@Override
-public String toString(){
-StringBuilder st = new StringBuilder();
-st.append(this.name + ": " + this.vin);
+    // other
+    @Override
+    public String toString(){
+        StringBuilder st = new StringBuilder();
+        st.append(this.name + ": " + this.vin);
 
-return st.toString();
-}
+        return st.toString();
+    }
 
 }
 /*****************************************

@@ -5,6 +5,7 @@ import java.util.Comparator;
  * @Sveinson
  */
 
+
 public abstract class SpaceShip implements Moveable,
             Comparator<String>, Comparable<SpaceShip>{
 

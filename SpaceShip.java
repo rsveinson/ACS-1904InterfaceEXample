@@ -9,6 +9,7 @@ import java.util.Comparator;
 public abstract class SpaceShip implements Moveable,
             Comparator<String>, Comparable<SpaceShip>{
 
+
     protected String name;
     protected int vin;
     protected int fuel;

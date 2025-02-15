@@ -42,6 +42,14 @@ public class MockSpaceShipGae{
         
         Collections.sort(ships);
         
+        /* is I was to sort my ships base on the
+         * alternate order defined in a Comparator
+         * 
+         * This is what it would look like in
+         * the driver code.
+         */
+        //Collectinos.sort(ships, new ShipSorter())
+        
         System.out.println("\nNow Sorted");
         printList(ships);
         

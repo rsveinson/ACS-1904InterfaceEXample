@@ -1,9 +1,12 @@
+import java.util.Comparator;
+
 /** 
  * ACS-1904 Assignment x
  * @Sveinson
  */
 
-public abstract class SpaceShip implements Moveable, Comparator<String>{
+public abstract class SpaceShip implements Moveable,
+            Comparator<String>, Comparable<SpaceShip>{
     protected String name;
     protected int vin;
     protected int fuel;

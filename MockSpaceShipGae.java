@@ -9,10 +9,10 @@ public class MockSpaceShipGae{
     public static void main(String[] args){
         final int MAXASSETS = 100;
         
-        // create an arrau for all of my game assets
+        // create an array for all of my game assets
         //Moveable[] assets = new Moveable[MAXASSETS];
         
-        // of maybe an array list
+        // or maybe an array list
         ArrayList<Moveable> assets = new ArrayList<>();
         
         // ViperFighter viperfitghter = new ViperFighter();
@@ -42,13 +42,13 @@ public class MockSpaceShipGae{
         
         Collections.sort(ships);
         
-        /* is I was to sort my ships base on the
+        /* if I was to sort my ships based on the
          * alternate order defined in a Comparator
          * 
          * This is what it would look like in
          * the driver code.
          */
-        //Collectinos.sort(ships, new ShipSorter())
+        //Collections.sort(ships, new ShipSorter())
         
         System.out.println("\nNow Sorted");
         printList(ships);

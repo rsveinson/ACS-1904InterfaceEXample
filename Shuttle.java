@@ -21,6 +21,14 @@ public class Shuttle extends SpaceShip{
         this.cargoLimit = cargoLimit;
     }
     
+    /* if Comparable were implemented here instead
+     * of in the abstract super-class SpaceShip
+     */
+    // @Override
+    // public int compareTo(SpaceShip other){
+        // return this.name.compareTo(other.name);
+    // }
+    
     // implement the abstract methods from SpaceShipt
     @Override
     public void move(int s, int d){

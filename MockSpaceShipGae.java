@@ -34,10 +34,10 @@ public class MockSpaceShipGae{
          * game inventory invoking the common
          * method on each object of each sub-class
          */
-        // System.out.println();
-        // for(Moveable m : assets){
-            // m.move(50, 23);
-        // }
+        System.out.println();
+        for(Moveable m : assets){
+            m.move(50, 23);
+        }
         
         // try some comparable stuff on space ships
         ArrayList<SpaceShip> ships = new ArrayList<>();

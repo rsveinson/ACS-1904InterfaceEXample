@@ -7,8 +7,7 @@ import java.util.Comparator;
 
 
 
-public abstract class SpaceShip implements Moveable, Comparable<SpaceShip>,
-            Comparator<String>{
+public abstract class SpaceShip implements Moveable, Comparable<SpaceShip>{
 
 
     protected String name;
@@ -31,10 +30,10 @@ public abstract class SpaceShip implements Moveable, Comparable<SpaceShip>,
 
     // implement compareTo from the comparable interface
     // should be passed down to the subclasses that extend this one
-    // @Override
-    // public int compareTo(SpaceShip s){
-        // return name.compareTo(s.name);
-    // }// end compare to
+    @Override
+    public int compareTo(SpaceShip s){
+        return name.compareTo(s.name);
+    }// end compare to
 
     // abstract method must be implemented in derived classes
     //public abstract void move(int speed, int direction);

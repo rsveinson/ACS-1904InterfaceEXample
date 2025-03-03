@@ -30,8 +30,18 @@ public class MockSpaceShipGae{
         System.out.println(comet instanceof Moveable);
         System.out.println(comet instanceof SpaceBody);
         
+        /* now we can run through the whole
+         * game inventory invoking the common
+         * method on each object of each sub-class
+         */
+        // System.out.println();
+        // for(Moveable m : assets){
+            // m.move(50, 23);
+        // }
+        
         // try some comparable stuff on space ships
         ArrayList<SpaceShip> ships = new ArrayList<>();
+        //ArrayList<Moveable> ships = new ArrayList<>();
         ships.add(new ViperFighter("Starbuck", 1234, 100));
         ships.add(new ViperFighter("Enterprise", 1235, 2500));
         ships.add(new ViperFighter("Defiant", 1236, 500));
@@ -57,7 +67,7 @@ public class MockSpaceShipGae{
     }
     
     public static void printList(ArrayList<SpaceShip> ships){
-        for(SpaceShip s : ships){
+        for(Moveable s : ships){
             System.out.println(s);
         }
     }
